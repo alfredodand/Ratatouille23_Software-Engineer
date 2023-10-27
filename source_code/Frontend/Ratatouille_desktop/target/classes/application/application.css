@@ -1,0 +1,95 @@
+.backgroundImage{
+	-fx-background-color: FFFBF3; 
+	-fx-background-image: url('https://i.imgur.com/kw4MLnt.png'); 
+	-fx-background-repeat: stretch; 
+	-fx-background-size: 650 506; 
+	-fx-background-position: center center;
+}
+
+.menuCategoria{
+	-fx-font-family: "Lucida Calligraphy";
+	-fx-font-size: 12px;
+	-fx-text-fill: #003F91;
+	-fx-font-weight: bold;
+}
+
+.button{
+	-fx-background-color: #003F91;
+	-fx-background-radius: 20px;
+	-fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: #000466;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+}
+
+.buttonRounded1{
+	-fx-background-radius: 30px; 
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 2,0,0,1); 
+	-fx-background-color: #F2A900; 
+}
+
+.buttonRounded1:hover{
+	-fx-background-radius: 30px; 
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 2,0,0,1); 
+	-fx-background-insets: 0 0 -1 0, 0, 1, 2;
+	-fx-background-color: #C38E14; 
+}
+
+.buttonRounded2{
+	-fx-background-radius: 30px; 
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 2,0,0,1); 
+	-fx-background-color: #003F91; 
+}
+
+.buttonRounded2:hover{
+	-fx-background-radius: 30px; 
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 2,0,0,1); 
+	-fx-background-insets: 0 0 -1 0, 0, 1, 2;
+	-fx-background-color: #000466; 
+}
+
+.text-field{
+	-fx-background-radius: 50px;
+	-fx-border-color:  #003F91;
+	-fx-border-radius: 50px;
+}
+
+.text-area{
+	-fx-border-color:  #003F91;
+}
+
+.text-area:focused{
+	-fx-border-color:  #000466;
+}
+
+.text-field:focused{
+	-fx-background-radius: 50px;
+	-fx-border-color:  #000466;
+	-fx-border-radius: 50px;
+}
+
+.date-picker .text-field {
+    -fx-background-radius: 50 0 0 50;
+	-fx-border-color:  #FFFFFF;
+	-fx-border-radius: 50 0 0 50;
+}
+
+.scroll-pane{
+	-fx-background-color: #FFFBF3;
+	-fx-fit-to-width: true;
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.combo-box-base {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}

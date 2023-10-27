@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="560.0" prefWidth="883.0" style="-fx-background-color: FFFBF3;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.controller.RisorseUmaneController">
+
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="866.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="352.0" prefWidth="108.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="22.0" layoutY="21.0" mnemonicParsing="false" onAction="#showSideBar" prefHeight="58.0" prefWidth="65.0" styleClass="buttonRounded1" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="21.0">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/menu_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="homeBtn" layoutX="22.0" layoutY="101.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="58.0" prefWidth="65.0" styleClass="buttonRounded2" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="noticeBtn" layoutX="22.0" layoutY="185.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="58.0" prefWidth="65.0" styleClass="buttonRounded2" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/menu_resturant_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="menuBtn" layoutX="22.0" layoutY="266.0" mnemonicParsing="false" onAction="#goToNotice" prefHeight="58.0" prefWidth="65.0" styleClass="buttonRounded2" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/notices_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="personaleBtn" layoutX="22.0" layoutY="349.0" mnemonicParsing="false" onAction="#goToGestisciPersonale" prefHeight="58.0" prefWidth="65.0" styleClass="buttonRounded2" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/humanResurce_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="personalizzaBtn" layoutX="22.0" layoutY="436.0" mnemonicParsing="false" onAction="#goToPersonalizzaAttivita" prefHeight="58.0" prefWidth="65.0" styleClass="buttonRounded2" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/customize_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="accountBtn" layoutX="22.0" layoutY="525.0" mnemonicParsing="false" onAction="#goToAccount" prefHeight="58.0" prefWidth="65.0" styleClass="buttonRounded2" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/account_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="418.0" BorderPane.alignment="CENTER">
+               <left>
+                  <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="nomeInput" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Nome">
+                           <VBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </left>
+               <right>
+                  <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="cognomeInput" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" promptText="Cognome">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </right>
+               <top>
+                  <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="410.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" style="-fx-alignment: center; -fx-text-fill: #003F91; -fx-font-weight: bold;" text="RISORSE UMANE" />
+                        <Label maxWidth="1.7976931348623157E308" style="-fx-alignment: center; -fx-text-fill: #003F91;" text="Aggiungi un nuovo dipendente" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="20.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </top>
+               <bottom>
+                  <VBox prefHeight="195.0" prefWidth="410.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="emailInput" prefHeight="20.0" prefWidth="410.0" promptText="Email" />
+                        <TextField fx:id="passwordInput" promptText="Password" />
+                        <DatePicker fx:id="dataNascitaInput" promptText="Data di nascita" style="-fx-border-color: #003F91; -fx-background-radius: 50 0 0 50; -fx-border-radius: 50 0 0 50;" />
+                        <FlowPane hgap="45.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ToggleButtonGroup fx:id="ruoloInput" prefHeight="25.0" prefWidth="239.0" selectionType="SINGLE">
+                                  <toggles>
+                                    <RadioButton fx:id="supervisoreRBtn" mnemonicParsing="false" text="Supervisore">
+                                       <padding>
+                                          <Insets right="45.0" />
+                                       </padding>
+                                    </RadioButton>
+                                    <RadioButton fx:id="addettoCucinaRBtn" mnemonicParsing="false" text="Addetto alla cucina">
+                                       <padding>
+                                          <Insets right="45.0" />
+                                       </padding>
+                                    </RadioButton>
+                                    <RadioButton fx:id="addettoSalaRBtn" mnemonicParsing="false" text="Addetto alla sala" />
+                                  </toggles>
+                              </ToggleButtonGroup>
+                           </children>
+                        </FlowPane>
+                        <Label fx:id="errorLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" />
+                        <Button fx:id="invioBtn" mnemonicParsing="false" onAction="#creaNuovoImpiegato" prefHeight="157.0" prefWidth="63.0" text="Submit" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="180.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </bottom>
+               <BorderPane.margin>
+                  <Insets bottom="200.0" />
+               </BorderPane.margin>
+            </BorderPane>
+         </center>
+         <bottom>
+            <Button mnemonicParsing="false" onAction="#goToGestisciPersonaleScene" text="Gestisci Personale" textFill="WHITE" BorderPane.alignment="BOTTOM_RIGHT">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" right="100.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

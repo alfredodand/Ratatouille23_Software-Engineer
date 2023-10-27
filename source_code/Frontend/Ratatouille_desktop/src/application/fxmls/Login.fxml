@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="493.0" prefWidth="626.0" style="-fx-background-color: #FFFBF3;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.controller.LoginController">
+   <children>
+      <BorderPane layoutX="74.0" layoutY="78.0" prefHeight="356.0" prefWidth="516.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <FlowPane prefHeight="73.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0">
+                     <image>
+                        <Image url="@../img/angolo_alto_sx.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </FlowPane>
+         </top>
+         <center>
+            <BorderPane prefHeight="105.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <center>
+                  <VBox fx:id="layoutFields" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="221.0" spacing="6.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="errorLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" />
+                        <TextField fx:id="email" promptText="Email" />
+                        <PasswordField fx:id="password" promptText="Password" />
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </center>
+         <bottom>
+            <BorderPane prefHeight="130.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <top>
+                  <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="120.0" prefWidth="90.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="68.0" text="Login" textFill="WHITE" textOverrun="CLIP" translateX="10.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="14.0" />
+                           </font>
+                        </Button>
+                        <FlowPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+
+                              <Label style="-fx-text-fill: #003F91;" text="Login" translateX="-18.0" underline="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="signUp" prefHeight="20.0" prefWidth="53.0" style="-fx-text-fill: #003F91;" text="SignUp" translateX="31.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </FlowPane>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </top>
+               <bottom>
+                  <FlowPane alignment="BOTTOM_RIGHT" prefHeight="57.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                           <image>
+                              <Image url="@../img/angolo_basso_dx.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+               </bottom>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

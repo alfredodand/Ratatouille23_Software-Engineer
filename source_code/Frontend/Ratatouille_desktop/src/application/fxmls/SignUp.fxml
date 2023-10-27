@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="472.0" prefWidth="665.0" style="-fx-background-color: #FFFBF3;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.controller.SignUpController">   <children>
+      <BorderPane layoutX="74.0" layoutY="78.0" prefHeight="356.0" prefWidth="516.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <FlowPane prefHeight="73.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label />
+                  <ImageView fitHeight="80.0" fitWidth="80.0">
+                     <image>
+                        <Image url="@../img/angolo_alto_sx.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </FlowPane>
+         </top>
+         <center>
+            <BorderPane prefHeight="105.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <center>
+                  <BorderPane BorderPane.alignment="CENTER">
+                     <center>
+                        <VBox prefHeight="100.0" prefWidth="200.0" spacing="6.0" BorderPane.alignment="CENTER">
+                           <children>
+                                 <TextField fx:id="nomeField" prefHeight="14.0" prefWidth="205.0" promptText="Nome">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="cognomeField" prefWidth="100.0" promptText="Cognome" />
+                              <TextField fx:id="emailField" promptText="Email" />
+                              <PasswordField fx:id="passwordField" promptText="Password" />
+                              <TextField fx:id="nomeAttivitaField" promptText="Nome attività" />
+                        <DatePicker fx:id="dataNascitaField" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="216.0" promptText="Data di nascita" style="-fx-border-color: #003F91; -fx-background-radius: 50 0 0 50; -fx-border-radius: 50 0 0 50;" />
+                           </children>
+                           <BorderPane.margin>
+                              <Insets left="150.0" right="150.0" />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </center>
+               <top>
+                  <Label fx:id="errorLabel" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </center>
+         <bottom>
+            <BorderPane prefHeight="130.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <top>
+                  <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="120.0" prefWidth="90.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#signUp" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #003F91;" text="SignUp" textFill="WHITE" textOverrun="CLIP" translateX="9.0">                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="14.0" />
+                           </font>
+                        </Button>
+                        <FlowPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="login" style="-fx-text-fill: #003F91;" text="Login" translateX="-18.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Label prefHeight="20.0" prefWidth="50.0" style="-fx-text-fill: #003F91;" text="SignUp" translateX="30.0" underline="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </FlowPane>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </top>
+               <bottom>
+                  <FlowPane alignment="BOTTOM_RIGHT" prefHeight="57.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                           <image>
+                              <Image url="@../img/angolo_basso_dx.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </FlowPane>
+               </bottom>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

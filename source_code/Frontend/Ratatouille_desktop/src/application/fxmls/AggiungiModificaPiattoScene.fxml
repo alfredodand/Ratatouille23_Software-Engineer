@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="883.0" style="-fx-background-color: FFFBF3;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="560.0" prefWidth="883.0" styleClass="backgroundImage" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="491.0" prefWidth="67.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="22.0" layoutY="21.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="27.0" prefWidth="34.0" styleClass="roundedButton1" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="21.0">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-cancel-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="447.0" BorderPane.alignment="CENTER">
+               <left>
+                  <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="118.0" prefWidth="209.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="nomePiattoInput" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Nome piatto*">
+                           <VBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="costoInput" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Costo*" />
+                        <TextField fx:id="allergeniInput" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" promptText="Allergeni comuni*" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="70.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </left>
+               <right>
+                  <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="113.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextArea fx:id="descrizioneInput" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="200.0" promptText="Descrizione*">
+                           <VBox.margin>
+                              <Insets top="9.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <ComboBox fx:id="categoriaInput" prefHeight="25.0" prefWidth="208.0" promptText="Categoria" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="70.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </right>
+               <top>
+                  <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="448.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" style="-fx-alignment: center; -fx-text-fill: #003F91; -fx-font-weight: bold;" text="AGGIUNGI O MODIFICA PIATTO">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Label>
+                        <Label fx:id="errorLabel" />
+                        <TextField fx:id="nomePiattoAuto" prefHeight="27.0" prefWidth="418.0" promptText="Nome per autocompletamento" />
+                        <Button fx:id="autocompletamentoBtn" mnemonicParsing="false" text="Autocompletamento">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <ProgressIndicator fx:id="progressBar" prefHeight="173.0" prefWidth="110.0" visible="false" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="100.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </top>
+               <bottom>
+                  <VBox prefHeight="71.0" prefWidth="447.0" spacing="5.0" translateY="40.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="SECONDA LINGUA">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <BorderPane prefHeight="57.0" prefWidth="447.0">
+                           <left>
+                              <VBox prefHeight="200.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <TextField fx:id="nomeSecondaLinguaInput" promptText="Name" />
+                                 </children>
+                              </VBox>
+                           </left>
+                           <right>
+                              <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <TextArea fx:id="descrizioneSecondaLinguaInput" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="200.0" promptText="Description" />
+                                 </children>
+                              </VBox>
+                           </right>
+                        </BorderPane>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="150.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </bottom>
+               <BorderPane.margin>
+                  <Insets right="50.0" />
+               </BorderPane.margin>
+            </BorderPane>
+         </center>
+         <bottom>
+            <Button fx:id="btnSalvaCambiamenti" mnemonicParsing="false" text="Aggiungi" BorderPane.alignment="BOTTOM_RIGHT">
+               <BorderPane.margin>
+                  <Insets bottom="100.0" right="100.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

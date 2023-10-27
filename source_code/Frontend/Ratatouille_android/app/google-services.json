@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050979789689",
+    "project_id": "ratatouille23-b496f",
+    "storage_bucket": "ratatouille23-b496f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050979789689:android:1363564d7c7a9bae361da8",
+        "android_client_info": {
+          "package_name": "com.example.ratatouille_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050979789689-3q4dhgqqttq1iac1rneidur4trmkokbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvK7u7VqAo1bfTqcLZ4XLaSA5nzajPgF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050979789689-3q4dhgqqttq1iac1rneidur4trmkokbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

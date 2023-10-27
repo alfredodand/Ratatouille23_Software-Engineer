@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>	
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="356.0" prefWidth="516.0" style="-fx-background-color: #FFFBF3;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.controller.MainSceneController">
+   <children>
+      <BorderPane layoutX="74.0" layoutY="78.0" prefHeight="356.0" prefWidth="516.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <FlowPane prefHeight="73.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label />
+                  <ImageView fitHeight="80.0" fitWidth="80.0">
+                     <image>
+                        <Image url="@../img/angolo_alto_sx.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </FlowPane>
+         </top>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <Label BorderPane.alignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="188.0" fitWidth="190.0">
+                           <image>
+                              <Image url="@../img/roundedlogo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </center>
+            </BorderPane>
+         </center>
+         <bottom>
+            <BorderPane prefHeight="133.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+               <top>
+                  <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="83.0" prefWidth="324.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#entra" prefHeight="31.0" prefWidth="137.0" style="-fx-font-size: 15;" text="Entra nell’app" textFill="WHITE" textOverrun="CLIP" translateX="140.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="12.0" />
+                           </font>
+                        </Button>
+                        <Text fill="#003f91" stroke="#00408f" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 15;" text="APPLICAZIONE DESKTOP PER AMMINISTRATORI E SUPERVISORI">
+                           <font>
+                              <Font name="Franklin Gothic Book" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </top>
+               <bottom>
+                  <FlowPane alignment="BOTTOM_RIGHT" prefHeight="47.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                           <image>
+                              <Image url="@../img/angolo_basso_dx.png" />
+                           </image>
+                        </ImageView>
+                        <Label />
+                     </children>
+                  </FlowPane>
+               </bottom>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

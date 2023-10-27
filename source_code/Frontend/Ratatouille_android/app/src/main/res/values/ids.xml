@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="header_message" />
+    <item type="id" name="show_message" />
+    <item type="id" name="spacing" />
+    <item type="id" name="check_box" />
+    <item type="id" name="hide_button" />
+    <item type="id" name="read_or_not" />
+    <item type="id" name="layout_constraint" />
+</resources>

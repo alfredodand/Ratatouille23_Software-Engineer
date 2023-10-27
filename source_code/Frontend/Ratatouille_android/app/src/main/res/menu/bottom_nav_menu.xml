@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_outline_account_circle_24"
+        android:title="Account"
+        android:iconTint="#003F91"/>
+
+    <item
+        android:id="@+id/notices"
+        android:icon="@drawable/ic_outline_notifications_none_24"
+        android:title="Avvisi"
+        android:iconTint="#003F91"/>
+
+    <item
+        android:id="@+id/nothing"
+        android:title="" />
+
+    <item
+        android:id="@+id/functions"
+        android:icon="@drawable/ic_outline_apps_24"
+        android:title="Funzionalità"
+        android:iconTint="#003F91"/>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_outline_logout_24"
+        android:title="Logout"
+        android:iconTint="#003F91"/>
+
+</menu>

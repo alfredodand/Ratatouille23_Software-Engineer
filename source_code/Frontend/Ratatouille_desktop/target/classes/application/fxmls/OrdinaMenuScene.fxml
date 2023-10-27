@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="883.0" style="-fx-background-color: FFFBF3;" stylesheets="@../application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.controller.OrdinaMenuController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="451.0" prefWidth="78.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="22.0" layoutY="1.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="27.0" prefWidth="34.0" styleClass="roundedButton1" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="1.0">
+                     <graphic>
+                        <ImageView id="backBtn" fitHeight="23.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-cancel-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <bottom>
+            <HBox fx:id="hBoxLayout" alignment="CENTER" spacing="100.0" BorderPane.alignment="BOTTOM_RIGHT">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" />
+               </BorderPane.margin>
+               <children>
+                  <Button fx:id="categoriaPrecedenteBtn" mnemonicParsing="false" text="Categoria precedente" />
+                  <Button fx:id="categoriaSuccessivaBtn" mnemonicParsing="false" text="Categoria successiva" />
+                  <Button fx:id="resetBtn" mnemonicParsing="false" styleClass="buttonRounded1" text="Reset categoria" />
+                  <Button fx:id="applica" mnemonicParsing="false" text="Applica" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <HBox fx:id="hBoxLayout1" maxWidth="1.7976931348623157E308" spacing="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="vBoxLayout" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" minWidth="180.0" prefHeight="451.0" prefWidth="250.0" spacing="5.0">
+                     <children>
+                        <Label fx:id="errorLabel" />
+                        <ComboBox fx:id="comboboxInput" prefWidth="150.0" promptText="Categoria 1" />
+                        <Button fx:id="aggiungiBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="Ok" />
+                        <BorderPane fx:id="panelLayout" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBoxLayout2" maxWidth="1.7976931348623157E308" minWidth="180.0" prefHeight="468.0" prefWidth="250.0">
+                     <children>
+                        <Label />
+                        <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="190.0" text="NUOVO MENU" />
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets right="50.0" />
+               </BorderPane.margin>
+            </HBox>
+         </center>
+         <top>
+            <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="ORDINA MENU" textFill="#003f91" />
+                  <Label fx:id="nomeCategoriaAttuale" text="Categoria 1" />
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

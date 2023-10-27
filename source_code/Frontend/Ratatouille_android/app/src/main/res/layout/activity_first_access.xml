@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBF3"
+    android:backgroundTint="#FFFBF3"
+    tools:context=".views.HomeActivity">
+
+    <TextView
+        android:id="@+id/benvenuto_message"
+        android:layout_width="268dp"
+        android:layout_height="354dp"
+        android:background="@drawable/roundedbutton5"
+        android:padding="10dp"
+        android:text="Benvenuto in Ratatuille23.\nPer poter iniziare ad utilizzare l’app è  necessario  reimpostare la tua password"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <EditText
+        android:id="@+id/newPasswordField"
+        android:layout_width="211dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/benvenuto_message"
+        app:layout_constraintEnd_toEndOf="@+id/benvenuto_message"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/benvenuto_message"
+        app:layout_constraintTop_toTopOf="@+id/benvenuto_message"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confermaPasswordButton"
+        android:layout_width="87dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/roundedbutton2"
+        android:text="Conferma"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/benvenuto_message"
+        app:layout_constraintEnd_toEndOf="@+id/benvenuto_message"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="@+id/benvenuto_message"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordField"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/angolo_basso_dx" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/angolo_basso_dx" />
+
+    <TextView
+        android:id="@+id/errorLable"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

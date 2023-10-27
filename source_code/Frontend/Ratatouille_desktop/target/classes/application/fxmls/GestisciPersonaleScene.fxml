@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="883.0" style="-fx-background-color: FFFBF3;" styleClass="backgroundImage" stylesheets="@../application.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.controller.GestisciPersonaleController">
+   <children>
+      <BorderPane prefHeight="560.0" prefWidth="808.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="560.0" prefWidth="64.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="indietroBtn" layoutX="22.0" layoutY="21.0" mnemonicParsing="false" onAction="#goToRisorseUmaneScene" prefHeight="30.0" prefWidth="51.0" styleClass="buttonRounded1" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="21.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-left-arrow-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="437.0" BorderPane.alignment="CENTER">
+               <top>
+                  <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="410.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="#003f91" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="CERCA INFORMAZIONI UTENTE" textAlignment="CENTER" wrappingWidth="418.1875" />
+                        <ComboBox fx:id="utentiComboBox" onAction="#mostraDatiUtente" prefHeight="25.0" prefWidth="346.0">
+                           <VBox.margin>
+                              <Insets left="35.0" top="10.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="20.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </top>
+               <bottom>
+                  <VBox prefHeight="200.0" prefWidth="471.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="nomeCognomeLabel" maxWidth="1.7976931348623157E308" prefHeight="17.0" style="-fx-alignment: center;" text="Nome e Cognome" textAlignment="CENTER" />
+                        <Label fx:id="emailLabel" maxWidth="1.7976931348623157E308" prefHeight="17.0" style="-fx-alignment: center;" text="Email" textAlignment="CENTER" />
+                        <Label fx:id="ruoloLabel" maxWidth="1.7976931348623157E308" prefHeight="17.0" style="-fx-alignment: center;" text="Ruolo" textAlignment="CENTER" />
+                        <FlowPane hgap="32.0" prefHeight="29.0" prefWidth="437.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#declassa" prefHeight="25.0" prefWidth="115.0" text="Declassa" textFill="WHITE">
+                                 <FlowPane.margin>
+                                    <Insets />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#promuovi" prefHeight="25.0" prefWidth="115.0" text="Promuovi" textFill="WHITE" />
+                              <Button mnemonicParsing="false" onAction="#licenzia" prefHeight="26.0" prefWidth="143.0" text="Solleva da incarico" textFill="WHITE" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </FlowPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="errorLabel" contentDisplay="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="27.0" prefWidth="426.0" textAlignment="CENTER" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </VBox>
+               </bottom>
+               <BorderPane.margin>
+                  <Insets bottom="200.0" />
+               </BorderPane.margin>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
